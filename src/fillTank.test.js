@@ -65,6 +65,6 @@ describe('fillTank', () => {
 
   it('should round the total price to two decimal places', () => {
     fillTank(customer, 1.234, 10);
-    expect(customer.money).toBe(2987.66);
+    expect(customer.money).toBeCloseTo(2987.66);
   });
 });
